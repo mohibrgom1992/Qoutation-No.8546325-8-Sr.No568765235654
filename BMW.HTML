@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expert Car Service Centre Quotation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        header {
+            background-color: #004d99;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        .logos {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+        .logos img {
+            height: 80px;
+        }
+        .logos p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #004d99;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .totals td {
+            font-weight: bold;
+        }
+        .totals td:last-child {
+            text-align: right;
+        }
+        .new-customer-gift td {
+            border: none;
+            padding: 20px 10px;
+            text-align: left;
+        }
+        .new-customer-gift td:nth-child(2) {
+            text-align: center;
+        }
+        .new-customer-gift td:nth-child(3) {
+            text-align: right;
+        }
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 14px;
+            color: #888;
+        }
+        .customer-details, .contact-details, .location-details {
+            margin-top: 20px;
+        }
+        .customer-details h3, .contact-details h3, .location-details h3 {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Expert Car Service Centre</h1>
+        <p>Your trusted partner for quality car maintenance</p>
+        <div class="logos">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/BMW.svg/1200px-BMW.svg.png" alt="BMW Logo">
+        </div>
+        <p>AUDI | Mercedes | BMW</p>
+        <p>German specialist</p>
+    </header>
+
+    <section>
+        <h2>Quotation for Car Maintenance</h2>
+        <table>
+            <tr>
+                <th>Agency Item Code</th>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Unit Price (AED)</th>
+                <th>Amount (AED)</th>
+            </tr>
+            <tr>
+                <td>AIC-001</td>
+                <td>Thermostat (Original)</td>
+                <td>1</td>
+                <td>785</td>
+                <td>785</td>
+            </tr>
+            <tr>
+                <td>AIC-002</td>
+                <td>Water Pump (Original)</td>
+                <td>1</td>
+                <td>710</td>
+                <td>710</td>
+            </tr>
+            <tr>
+                <td>AIC-003</td>
+                <td>Oil Housing Filter (OEM)</td>
+                <td>1</td>
+                <td>615</td>
+                <td>615</td>
+            </tr>
+            <tr>
+                <td>AIC-004</td>
+                <td>Upper Coolant Radiator Pipe (Original)</td>
+                <td>1</td>
+                <td>55</td>
+                <td>55</td>
+            </tr>
+            <tr>
+                <td>AIC-005</td>
+                <td>Reservoir Tank Cap (Original)</td>
+                <td>2</td>
+                <td>420</td>
+                <td>420</td>
+            </tr>
+            <tr>
+                <td>AIC-006</td>
+                <td>Intake Manifold Gasket (Original)</td>
+                <td>4</td>
+                <td>40</td>
+                <td>160</td>
+            </tr>
+            <tr>
+                <td>AIC-007</td>
+                <td>Spark Plug (Original)</td>
+                <td>4</td>
+                <td>100</td>
+                <td>400</td>
+            </tr>
+            <tr>
+                <td>AIC-008</td>
+                <td>Ignition Coils (Original)</td>
+                <td>4</td>
+                <td>250</td>
+                <td>1000</td>
+            </tr>
+            <tr>
+                <td>AIC-009</td>
+                <td>Front Control Arm (Right Side)</td>
+                <td>1</td>
+                <td>410</td>
+                <td>410</td>
+            </tr>
+            <tr>
+                <td>AIC-010</td>
+                <td>Front Lower Arm (OEM)</td>
+                <td>1</td>
+                <td>325</td>
+                <td>325</td>
+            </tr>
+            <tr>
+                <td>AIC-011</td>
+                <td>Coolant</td>
+                <td>1</td>
+                <td>150</td>
+                <td>150</td>
+            </tr>
+            <tr>
+                <td>N/A</td>
+                <td>Admin Fee</td>
+                <td>1</td>
+                <td>1700</td>
+                <td>1700</td>
+            </tr>
+            <tr class="totals">
+                <td colspan="4">Total</td>
+                <td>7530</td>
+            </tr>
+            <tr class="totals">
+                <td colspan="4">Total + 5% VAT</td>
+                <td>7706.5</td>
+            </tr>
+            <tr class="new-customer-gift">
+                <td>New Customer Gift</td>
+                <td>2 Free Services</td>
+                <td>1. Engine Oil Change<br>2. Full Paint for the Front Bumper</td>
+            </tr>
+        </table>
+    </section>
+
+    <div class="customer-details">
+        <h3>Customer Details</h3>
+        <p><strong>Company Name:</strong> Xida Hotel Management - Mr. Mohamed Ismail</p>
+        <p><strong>Date:</strong> 21/08/2024</p>
+        <p><strong>Mobile Number:</strong> 0528303935</p>
+    </div>
+
+    <div class="location-details">
+        <h3>Location Details</h3>
+        <p><strong>Owner:</strong> Ahmed Ali Basha</p>
+        <p><strong>Address:</strong> Industrial Area 2 - Sharjah, Near Industrial Area 2 Police Station - UAE</p>
+        <p><strong>Phone Numbers:</strong> 0521228938, 0555612315</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Expert Car Service Centre. All rights reserved.</p>
+    </footer>
+</body>
+</html>
